@@ -47,6 +47,7 @@ const map = new mapboxgl.Map({
   center: config.center,
   zoom: config.zoom,
   transformRequest: transformRequest,
+  attributionControl: false
 });
 
 function flyToLocation(currentFeature) {
@@ -563,6 +564,26 @@ const bounds = [
 // Set the map's max bounds.
 map.setMaxBounds(bounds);
 
+map.addControl(new mapboxgl.AttributionControl({
+  customAttribution: '<a href="https://omgeving.vlaanderen.be/nl/ena-economisch-netwerk-albertkanaal">ENA</a> <a href="https://vlaanderen.be">Vlaamse Overheid</a>'
+}));
 
+class LogoVlaanderen {
+onAdd(map) {
+    this._map = map;
+    this._container = document.createElement('img');
+    this._container.className = 'mapboxgl-ctrl';
+    this._container.src = 'https://assets.vlaanderen.be/image/upload/widgets/vlaanderen-is-omgeving-logo.svg';
+    this._container.width = 120
+    this._container.href = "https://omgeving.vlaanderen.be"
+    return this._container;
+  }
+
+  onRemove() {
+    this._container.parentNode.removeChild(this._container);
+    this._map = undefined;
+  }
+}
+map.addControl(new LogoVlaanderen(), "top-left")
 
 
