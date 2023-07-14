@@ -595,6 +595,7 @@ class Legenda {
     this._container.appendChild(this.newEntry("bestaand_bedrijventerrein", "Bestaand Bedrijventerrein"))
     this._container.appendChild(this.newEntry("bos", "Natuurgebied"))
     this._container.appendChild(this.newEntry("regio", "Regio"))
+    this._container.appendChild(this.newEntry("infrastructuurproject", "Infrastructuurproject"))
     this._container.width = 120
     this._container.classList.add("legenda")
     return this._container;
