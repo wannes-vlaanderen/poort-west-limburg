@@ -117,5 +117,33 @@
 
   }
 
+.box {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  border: 1px solid black;
+  clear: both;
+}
 
+.nieuw_bedrijventerrein {
+  background-color: #e8da11;
+}
+
+.bestaand_bedrijventerrein {
+  background-color: #3d4f71;
+}
+
+.regio {
+  background-color: #b0a8c2;
+}
+
+.bos {
+  background-color: #2b6938;
+}
+
+.legenda {
+  background-color: #ffffff;
+  padding: 10px;
+}
   
