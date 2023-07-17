@@ -11,7 +11,7 @@ const config = {
   zoom: 12, // adjust zoom if necessary
   title: 'Gebiedsprogramma\nPoort West-Limburg', // choose a title
   description: 'Gebiedsprogramma in West Limburg', // add a short description
-  sideBarInfo: ['Titel', 'Terreinfunctie'], // the first item is displayed in bold, call it the 'title' of that project, the second is displayed under it kind of like a very short descriptsion
+  sideBarInfo: ['Titel'], // the first item is displayed in bold, call it the 'title' of that project, the second is displayed under it kind of like a very short descriptsion
   popupInfo: ['Titel'], // this is the title of the balloon you get when you click on a location
   popupInfo2: ['Link'], // this is the link under 'meer info'
   popupInfo3: ['Description'], // this is the short description displayed in the balloon
