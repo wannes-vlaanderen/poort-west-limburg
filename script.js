@@ -81,7 +81,6 @@ function buildLocationList(locationData) {
 
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement('button'));
-    link.className = 'title';
     link.id = 'link-' + prop.id;
     link.innerHTML =
       '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p>';
