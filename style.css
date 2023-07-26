@@ -29,27 +29,27 @@
 }
 
 .listings .item {
-  font: 14px/18px 'Flanders Art Sans Light', Arial, Helvetica, sans-serif;
-    font-size: 12px;
+  font-size: 12px;
+  font-weight: 400;
   color: #333332;
-    word-wrap: break-word;
-    text-decoration: none;
-    border-bottom: solid rgb(34, 33, 33, .3) 1px;
+  word-wrap: break-word;
+  text-decoration: none;
+  border-bottom: solid rgb(34, 33, 33, .3) 1px;
   
 }
 
 .listings .item:last-child {
-  font: 14px/18px 'Flanders Art Sans Light', Arial, Helvetica, sans-serif;
-    border-bottom: none;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: none;
 }
 
 .listings .item .title {
     display: inline-block;
     width: 100%;
     color: #333332;
-    font: 14px/18px 'Flanders Art Sans Light', Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: 400;
     margin-top: 5px;
     text-decoration: none;
 }
@@ -117,37 +117,39 @@
 
   }
 
-.box {
-  float: left;
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
-  border: 1px solid black;
-  clear: both;
-}
-
-.nieuw_bedrijventerrein {
-  background-color: #e8da11;
-}
-
-.bestaand_bedrijventerrein {
-  background-color: #3d4f71;
-}
-
-.regio {
-  background-color: #b0a8c2;
-}
-
-.bos {
-  background-color: #2b6938;
-}
-
-.infrastructuurproject {
-  background-color: #f8b06d;
-}
-
 .legenda {
   background-color: #ffffff;
   padding: 10px;
 }
-  
+
+.box {
+  float: left;
+  height: 16px;
+  width: 20px;
+  margin-top: 2px;
+  margin-right: 5px;
+  clear: both;
+}
+
+.circle {
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 20px;
+  height: 16px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid black;
+  clear: both;
+  margin-right: 5px;
+}
+
+.line {
+  float: left;
+  width: 20px;
+  height: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  clear: both;
+}

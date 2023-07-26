@@ -1,17 +1,12 @@
-const legende = {
-  "#e8da11": "Nieuw bedrijventerrein",
-  "#3d4f71": "Deelproject herstructurering",
-  "#b0a8c2": "Herstructuring en Inbreiding",
-  "#58ad6a": "Open ruimte",
-  "#f8b06d": "Infrastructuurproject"
-}
-
 class Legenda {
+  constructor (legende) {
+    this.legende = legende
+  }
   onAdd(map) {
     this._map = map;
     this._container = document.createElement('div');
     this._container.className = 'mapboxgl-ctrl';
-    for (const [color, name] of Object.entries(legende)) {
+    for (const [color, name] of Object.entries(this.legende)) {
       this._container.appendChild(this.newEntry(color, name));
     }
     this._container.width = 120
